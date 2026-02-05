@@ -113,7 +113,7 @@
 			--margin: 0;
 		}
 		.banner h1 {
-			font-size: 4rem;
+			font-size: 2rem;
 		}
 		.banner p {
 			font-size: 1.2rem;
