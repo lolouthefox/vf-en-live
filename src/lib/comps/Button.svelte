@@ -1,8 +1,8 @@
 <script lang="ts">
-	let { children, ...props } = $props();
+	let { children, variant = false, ...props } = $props();
 </script>
 
-<button {...props}>
+<button class:variant {...props}>
 	<div class="content">
 		{@render children()}
 	</div>
@@ -34,6 +34,14 @@
 	}
 	button:hover {
 		color: var(--bg);
+		box-shadow: inset 0 0 0 2px var(--accent);
+	}
+	button.variant {
+		color: var(--bg);
+		box-shadow: inset 0 0 0 2px var(--accent);
+	}
+	button.variant:hover {
+		color: white;
 		box-shadow: inset 0 0 0 2px var(--accent);
 	}
 	.content {
