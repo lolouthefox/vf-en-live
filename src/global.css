@@ -1,0 +1,48 @@
+:root {
+    --background: #000;
+    --text: #fff;
+    --accent: rgb(180, 21, 66);
+
+    --font-body: 'Satoshi', sans-serif;
+    --font-display: 'Stardom', serif;
+
+    /* Utilities */
+    --full: calc(infinity * 1px);
+    --margin: 48px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    accent-color: var(--accent);
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+    font-family: var(--font-body);
+}
+
+::selection {
+    background-color: var(--accent);
+    color: var(--background);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-display);
+}
+
+a {
+    color: var(--accent);
+    text-decoration: dotted underline;
+}
+
+a:hover {
+    text-decoration: underline;
+}
